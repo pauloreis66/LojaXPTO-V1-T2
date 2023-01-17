@@ -68,7 +68,9 @@
             this.toolsConsultarVendas = new System.Windows.Forms.ToolStripButton();
             this.toolsRegistarAvarias = new System.Windows.Forms.ToolStripButton();
             this.toolUser = new System.Windows.Forms.ToolStripButton();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.menu.SuspendLayout();
+            this.status.SuspendLayout();
             this.tools.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,7 +87,7 @@
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
             this.menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menu.Size = new System.Drawing.Size(1112, 38);
+            this.menu.Size = new System.Drawing.Size(1284, 38);
             this.menu.TabIndex = 3;
             this.menu.Text = "menu";
             // 
@@ -206,6 +208,7 @@
             this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
             this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(189, 34);
             this.categoriasToolStripMenuItem.Text = "Categorias";
+            this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
             // 
             // vendasToolStripMenuItem
             // 
@@ -263,10 +266,12 @@
             // 
             this.status.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.status.ImageScalingSize = new System.Drawing.Size(40, 40);
-            this.status.Location = new System.Drawing.Point(0, 590);
+            this.status.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.status.Location = new System.Drawing.Point(0, 737);
             this.status.Name = "status";
             this.status.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
-            this.status.Size = new System.Drawing.Size(1112, 22);
+            this.status.Size = new System.Drawing.Size(1284, 24);
             this.status.TabIndex = 4;
             this.status.Text = "status";
             // 
@@ -287,7 +292,7 @@
             this.toolUser});
             this.tools.Location = new System.Drawing.Point(0, 38);
             this.tools.Name = "tools";
-            this.tools.Size = new System.Drawing.Size(1112, 49);
+            this.tools.Size = new System.Drawing.Size(1284, 49);
             this.tools.TabIndex = 5;
             this.tools.Text = "toolStrip1";
             // 
@@ -328,13 +333,13 @@
             this.panel1.Location = new System.Drawing.Point(0, 87);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(150, 503);
+            this.panel1.Size = new System.Drawing.Size(250, 650);
             this.panel1.TabIndex = 6;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LojaXPTO.Properties.Resources.Tech_Support_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 106);
+            this.pictureBox1.Location = new System.Drawing.Point(76, 104);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(96, 104);
@@ -400,11 +405,17 @@
             this.toolUser.ToolTipText = "Login de Utilizador";
             this.toolUser.Click += new System.EventHandler(this.toolUser_Click);
             // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(54, 19);
+            this.toolStripStatusLabel1.Text = "ver. 2.0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1112, 612);
+            this.ClientSize = new System.Drawing.Size(1284, 761);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tools);
             this.Controls.Add(this.status);
@@ -417,6 +428,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
+            this.status.ResumeLayout(false);
+            this.status.PerformLayout();
             this.tools.ResumeLayout(false);
             this.tools.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -467,6 +480,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripLabel toolLabel;
         private System.Windows.Forms.ToolStripButton toolUser;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
 

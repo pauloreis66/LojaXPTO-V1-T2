@@ -52,10 +52,10 @@
             this.status.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.status.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusMsg});
-            this.status.Location = new System.Drawing.Point(0, 411);
+            this.status.Location = new System.Drawing.Point(0, 462);
             this.status.Name = "status";
             this.status.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
-            this.status.Size = new System.Drawing.Size(767, 22);
+            this.status.Size = new System.Drawing.Size(784, 22);
             this.status.TabIndex = 0;
             this.status.Text = "statusStrip1";
             // 
@@ -151,7 +151,7 @@
             // 
             this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovo.Image = global::LojaXPTO.Properties.Resources.Badge_plus_icon;
-            this.btnNovo.Location = new System.Drawing.Point(18, 341);
+            this.btnNovo.Location = new System.Drawing.Point(18, 379);
             this.btnNovo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(118, 56);
@@ -166,7 +166,7 @@
             // 
             this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtualizar.Image = global::LojaXPTO.Properties.Resources.Badge_tick_icon;
-            this.btnAtualizar.Location = new System.Drawing.Point(140, 341);
+            this.btnAtualizar.Location = new System.Drawing.Point(140, 379);
             this.btnAtualizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(118, 56);
@@ -181,7 +181,7 @@
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Image = global::LojaXPTO.Properties.Resources.Badge_multiply_icon;
-            this.btnEliminar.Location = new System.Drawing.Point(385, 341);
+            this.btnEliminar.Location = new System.Drawing.Point(385, 379);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(118, 56);
@@ -196,7 +196,7 @@
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = global::LojaXPTO.Properties.Resources.Paint_tools_icon;
-            this.btnCancelar.Location = new System.Drawing.Point(262, 341);
+            this.btnCancelar.Location = new System.Drawing.Point(262, 379);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(118, 56);
@@ -211,7 +211,7 @@
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Image = global::LojaXPTO.Properties.Resources.Floppy_disk_icon;
-            this.btnGuardar.Location = new System.Drawing.Point(561, 341);
+            this.btnGuardar.Location = new System.Drawing.Point(575, 379);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(185, 56);
@@ -228,7 +228,7 @@
             this.lstProdutos.Location = new System.Drawing.Point(428, 37);
             this.lstProdutos.Margin = new System.Windows.Forms.Padding(2);
             this.lstProdutos.Name = "lstProdutos";
-            this.lstProdutos.Size = new System.Drawing.Size(317, 290);
+            this.lstProdutos.Size = new System.Drawing.Size(332, 316);
             this.lstProdutos.TabIndex = 14;
             this.lstProdutos.DoubleClick += new System.EventHandler(this.lstProdutos_DoubleClick);
             // 
@@ -236,7 +236,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 433);
+            this.ClientSize = new System.Drawing.Size(784, 484);
             this.ControlBox = false;
             this.Controls.Add(this.lstProdutos);
             this.Controls.Add(this.btnCancelar);

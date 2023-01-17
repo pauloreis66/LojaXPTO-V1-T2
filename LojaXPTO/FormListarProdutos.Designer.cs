@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.status = new System.Windows.Forms.StatusStrip();
             this.statusMsg = new System.Windows.Forms.ToolStripStatusLabel();
             this.tools = new System.Windows.Forms.ToolStrip();
-            this.btnSair = new System.Windows.Forms.ToolStripButton();
             this.grelha = new System.Windows.Forms.DataGridView();
-            this.statusStrip1.SuspendLayout();
+            this.btnSair = new System.Windows.Forms.ToolStripButton();
+            this.status.SuspendLayout();
             this.tools.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grelha)).BeginInit();
             this.SuspendLayout();
             // 
-            // statusStrip1
+            // status
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.status.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusMsg});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 388);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(767, 22);
-            this.statusStrip1.TabIndex = 0;
-            this.statusStrip1.Text = "statusStrip1";
+            this.status.Location = new System.Drawing.Point(0, 388);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(767, 22);
+            this.status.TabIndex = 0;
+            this.status.Text = "statusStrip1";
             // 
             // statusMsg
             // 
@@ -66,16 +66,6 @@
             this.tools.TabIndex = 1;
             this.tools.Text = "toolStrip1";
             // 
-            // btnSair
-            // 
-            this.btnSair.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnSair.Image = global::LojaXPTO.Properties.Resources.Windows_Close_Program_icon;
-            this.btnSair.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(36, 36);
-            this.btnSair.Text = "Fechar";
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
-            // 
             // grelha
             // 
             this.grelha.AllowUserToAddRows = false;
@@ -90,6 +80,16 @@
             this.grelha.Size = new System.Drawing.Size(767, 349);
             this.grelha.TabIndex = 2;
             // 
+            // btnSair
+            // 
+            this.btnSair.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnSair.Image = global::LojaXPTO.Properties.Resources.Windows_Close_Program_icon;
+            this.btnSair.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(36, 36);
+            this.btnSair.Text = "Fechar";
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
             // FormListarProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -98,11 +98,11 @@
             this.ControlBox = false;
             this.Controls.Add(this.grelha);
             this.Controls.Add(this.tools);
-            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.status);
             this.Name = "FormListarProdutos";
             this.Load += new System.EventHandler(this.FormListarProdutos_Load);
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            this.status.ResumeLayout(false);
+            this.status.PerformLayout();
             this.tools.ResumeLayout(false);
             this.tools.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grelha)).EndInit();
@@ -113,7 +113,7 @@
 
         #endregion
 
-        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.StatusStrip status;
         private System.Windows.Forms.ToolStripStatusLabel statusMsg;
         private System.Windows.Forms.ToolStrip tools;
         private System.Windows.Forms.ToolStripButton btnSair;

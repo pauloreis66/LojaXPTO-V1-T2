@@ -115,8 +115,6 @@ namespace LojaXPTO
                     MessageBoxIcon.Warning);
 
                 return;
-
-
             }
 
             //guardar os dados na listbox
@@ -259,7 +257,6 @@ namespace LojaXPTO
             }
             //encerra o formulário (falta guardar depois num ficheiro de dados)
             this.Close();
-
 
             //abrir o formulário da listagem
             Form f = new FormListarProdutos(produtos, num_produtos);
